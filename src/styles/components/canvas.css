@@ -1,0 +1,95 @@
+.canvas{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(183, 174, 162);
+    background-size: cover;
+}
+
+.message-box{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 12rem;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.message-box-header{
+    margin-bottom: 2rem;
+}
+
+.message-box-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.message-box-body select{
+    height: 2rem;
+    border: none;
+}
+
+.message-box-body input{
+    border: none;
+    height: 2rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.message-box-body button{
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #F0E3E3;
+    margin-top: 10px;
+    color: black;
+}
+.message-box-body button:disabled{
+    background-color: rgb(109, 107, 107);
+}
+.show-message{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.show-message h2{
+    margin-bottom: 0;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.show-message h2:hover{
+    cursor: pointer;
+}
+
+.show-message-content{
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+}
+
+.show-message p{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem 2rem;
+    background-color: #f0e3e3;
+}
+
+.show-message-delete-message{
+    background-color: transparent;
+    border: none;
+    padding: 4px;
+    color: rgb(231, 48, 48);
+}
+
+.show-message-delete-message:hover{
+    cursor: pointer;
+}

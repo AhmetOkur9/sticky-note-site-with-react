@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css"
+// components
+import Canvas from "./components/Canvas";
+
+
 
 function App() {
+  const [imgUrl,setImgUrl] = useState("")
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-page">
+      <h1>Üzerinde Not Almak İstediğiniz Resmi Yükleyin</h1>
+      <p>Mesaj bırakma modunu açmak için tuvale tıklayıp c'ye basınız.</p>
+      <input style={{marginBottom:"3rem"}} onChange={e=>setImgUrl(e.target.value)} type="text" placeholder="resmin url'si" />
+      <Canvas imgUrl={imgUrl}/>
     </div>
   );
 }
